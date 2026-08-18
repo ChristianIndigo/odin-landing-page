@@ -3,7 +3,6 @@
   --accent: #3882F6;
   --text-color: #F9FAF8;
   --secondary-text: #E5E7EB;
-  --secondary-bg: #E5E7EB;
 }
 
 body{
@@ -27,11 +26,31 @@ header{
 }
 
 .info{
-    padding: 5% 5% 5% 5%;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.quote{
+    background-color: var(--secondary-text);
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.finalCTA{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    padding: 1% 5% 1% 5%;
+    color: var(--text-color);
 }
 
 .inner{
@@ -57,12 +76,19 @@ header{
     flex-wrap: wrap;
 }
 
+.inner-quote{
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
+}
+
 .container{
     gap: 8px;
 }
 
-.quote{
-    background-color: var(--secondary-bg);
+.cta{
+    padding: 5%;
+    border-radius: 16px;
 }
 
 h1{
@@ -73,12 +99,10 @@ h1{
 }
 
 h2{
-    h1{
     font-size: 36px;
     color: var(--text-color);
     font-weight: 900;
     margin:0;
-}
 }
 
 .sec-text{
@@ -117,7 +141,7 @@ li a{
 .hero-img{
     width: 500px;
     height: 500px;
-    
+    border-radius: 16px;
 }
 
 .primary-btn{
@@ -126,6 +150,18 @@ li a{
     border-style: solid;
     border-radius: 16px;
     border-color: var(--accent);
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.secondary-btn{
+    background-color: var(--accent);
+    color: var(--text-color);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 16px;
+    border-color: var(--text-color);
     padding: 16px 24px;
     font-size: 18px;
     font-weight: 500;
@@ -150,3 +186,19 @@ li a{
     border-color: var(--accent);
 }
 
+.quote-main{
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--dark-bg);
+}
+
+.quote-author{
+    font-weight: 600;
+    font-size: 18px;
+    text-align: right;
+}
+
+.info-heading h2{
+    color: var(--dark-bg);
+}
